@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2 Jam</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <center>
+        <h1 id="jam">Placeholder Jam</h1>
+        <br>
+        <button id="start">START/STOP</button>
+    </center>
+
+    <script>
+               
+        $(function(){
+
+            var con=false;
+            $("#start").click(function(){
+                con= !con;
+                if(con){
+                    const interval=setInterval(function(){
+                        var d=new Date();
+                        var formatingDay = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                        var formatHours= ("0" + d.getHours()).slice(-2)+":"+("0" + d.getMinutes()).slice(-2)+":"+("0" + d.getSeconds()).slice(-2);
+                        $("h1").html(d.toLocaleDateString("id-ID", formatingDay)+"<br>"+formatHours);
+                    },1000);
+                } else{
+
+                    for (var i = 0; i < 10000; i++){
+                        window.clearInterval(i);
+                    }
+                        
+                    $("#jam").html("Placeholder Jam"); 
+                }
+
+            })
+
+        })
+    </script>
+</body>
+</html>

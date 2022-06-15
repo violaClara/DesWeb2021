@@ -1,0 +1,770 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+
+body{
+    background-color: black;
+    color: black;
+   
+}
+
+#wrapper{
+    position: relative;
+    left: 0%;
+    width: 100%;
+  
+}
+
+#header{
+    background-color: whitesmoke;
+    color: #314b66;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#headStarUp{
+    opacity: 20%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+}
+#headStarDown{
+    opacity: 50%;
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+  
+}
+
+
+#hello{
+    position: absolute;
+    left: 10%;
+    top:20%;
+    font-size: 2vw;
+}
+#fname{
+    position: absolute;
+    left: 15%;
+    top:30%;
+    font-size: 11vw;
+    font-weight: lighter;
+}
+#lname{
+    position: absolute;
+    left: 10%;
+    top:50%;
+    font-size: 10vw;
+    font-weight: bolder;
+    margin-top: 1.5vh;
+}
+#headdes{
+    position: absolute;
+    left: 10%;
+    top:80%;
+    font-size: 1vw;
+    width: 40%;
+}
+
+#myself{
+    position: absolute;
+    right: 7%;
+    top: 12%;
+    width: 30%;
+    height: auto;
+}
+
+
+#menu{
+    background-color: #314B66;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    z-index: 2;
+}
+
+.menuClass{
+    height: 100%;
+}
+.menuClass li:not(:last-child){
+    margin-left: 9vw;
+    margin-right: 7vw;
+    padding-top: 1.5%;
+}
+
+#menu li{
+    float: left;
+    list-style: none;
+   
+}
+#menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8vw;
+    letter-spacing: 0.2vh;
+}
+
+.active{
+    background-color: #ff7f2c;
+    height: 5vh;
+    padding:1% 1% 0 1%;
+    transition: all 0.1s;
+    border-radius: 5%;
+}
+
+#pojok{
+    background-color: #ff7f2c;
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 10vh;
+}
+
+#closing{
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 10vh;
+    display: none;
+    top: 0;
+}
+
+
+#contactBtn{
+    color: white;
+    font-weight: bold;
+    font-size: 2.8vw;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+#contactBtn:hover{
+    cursor: pointer;
+}
+#closing:hover{
+    cursor: pointer;
+}
+
+
+#contactForm{
+    background-color:#ff7f2c ;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    display: none;
+    
+}
+
+.cf{
+    display: inline-flex;
+    color: white;
+}
+#contactForm img{
+   
+    margin-top: 2vh;
+    margin-left: 14%;
+    margin-right: 4%;
+
+}
+
+
+
+#contactForm p{
+    font-size: smaller;
+    margin-top: 2vh;
+    margin-left: 6%;
+    margin-right: 3%;
+    padding-bottom: 2%;
+   
+    
+}
+
+
+#address p{
+    font-size: smaller;
+}
+
+#aboutme{
+    background-color: #111111;
+    height: 90vh;
+    color: white;
+    position: relative;
+}
+
+#abBio{
+    width: 500%;
+
+}
+
+
+#aboutS1{
+    background-color: whitesmoke;
+    height: 90vh;
+    color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    transition: margin 1.5s;
+    overflow: auto;
+}
+
+#myself2{
+    position: absolute;
+    left: 7%;
+    top: 12%;
+    width: 30%;
+    height: auto;
+
+}
+
+#toLeft{
+    width: 7vh;
+    height: 12vh;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+
+}
+#toRight{
+    width: 7vh;
+    height: 12vh;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+
+
+#aboutS2{
+    background-color: whitesmoke;
+    height: 90vh;
+    color: #c5c5c5;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    
+}
+
+#longname{
+    position: absolute;
+    right: 10%;
+    top:30%;
+    font-size: 4vh;
+    color: #314b66;
+    font-weight: bolder;
+    
+}
+
+#position{
+    position: absolute;
+    right: 10%;
+    top:37%;
+    font-size: 3vh;
+    color: #343333;
+    font-weight: bolder;
+}
+
+#aboutdes{
+    position: absolute;
+    right: 10%;
+    top:50%;
+    font-size: 1vw;
+    width: 40%;
+    text-align: right;
+    color: #6b6b6b;
+}
+
+#riwayat{
+    width: 50%;
+    height: 100%;
+}
+#edu{
+    position: absolute;
+    left:10%;
+    top:8%;
+    font-size: 3vw;
+    color: #314b66;
+    
+}
+.school{
+    position: absolute;
+    left:10%;
+    top:30%;
+
+}
+.school li{
+    list-style: none;
+    margin-bottom: 10vh;
+    font-size: 1.5vw;
+    color: #343333;
+}
+
+.nameSch{
+    position: absolute;
+    left:20%;
+    top:30%;
+}
+.nameSch li{
+    list-style: none;
+    margin-bottom: 10vh;
+    font-size: 1.5vw;
+    color: #343333;
+}
+
+.timecon{
+    position: absolute;
+    left:15.7vw;
+    top:30%;
+    
+}
+.timecon li{
+    list-style: none;
+    background-color: #314b66;
+    margin-bottom: 6.5vw;
+    width: 4vh;
+    height: 1vh;
+}
+#verLine{
+    background-color: #314b66;
+    height: 0vh ;
+    width: 1vh;
+    position: absolute;
+    left:16.3vw;
+    top:30%;
+    transition: height 1.5s;
+}
+
+
+
+#organisasi{
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: #314B66;
+    min-width: 40%;
+    min-height: 40%;
+    margin: 4%;
+    position: relative;
+    overflow: auto;
+    border-radius: 2%;
+}
+.textBox{
+    position:absolute;
+    top:40%
+}
+
+
+.titleOrg{
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 1.5vw;
+   
+}
+
+.detOrg{
+    text-align: justify;
+    font-size: 2vh;
+    bottom: 1%; 
+    padding: 0 5% 01%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.imgOrg{
+    margin-top: 10%;
+}
+
+
+
+#skill{
+    background-color: black;
+    height: 90vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+
+
+#slides{
+    width: 400%;
+    display: flex;
+}
+#slides input{
+    display: none;
+}
+
+
+#skillSlide1{
+    height: 90vh;
+    background-image: url("images/mob-dev.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+#skillSlide2{
+    height: 90vh;
+    background-image: url("images/game-dev.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#skillSlide3{
+    height: 90vh;
+    background-image: url("images/web-dev.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#skillSlide4{
+    height: 90vh;
+    background-image: url("images/ps-dev.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.navMan{
+    position: absolute;
+    width: 20vh;
+    display: flex;
+    bottom: 9%;
+    left:45%;
+
+}
+
+.buttonManu{
+    border: 2px solid #707a7e;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonManu:not(:last-child){
+    margin-right: 20%;
+}
+
+.buttonManu:hover{
+    background-color: #707a7e;
+}
+
+
+
+#sl1:checked ~ .no1{
+    margin-left: 0;
+    transition: all 2s;
+}
+
+
+#sl2:checked ~ .no1{
+  
+    margin-left: -33.33%;
+    transition: all 2s;
+}
+
+
+#sl3:checked ~ .no1{
+
+    margin-left: -100%;
+    transition: all 2s;
+}
+
+#sl4:checked ~ .no1{
+    margin-left: -300%;
+    transition: all 2s;
+}
+
+.navAuto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    display: none;
+}
+.navAuto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#sl1:checked ~ .auto1{
+    background: blue;
+}
+
+#sl2:checked ~ .auto2{
+    background: blue;
+}
+
+#sl2:checked ~ .auto2{
+    background: blue;
+}
+
+#sl2:checked ~ .auto2{
+    background: blue;
+}
+
+
+
+
+.skilltitle{
+    font-size: 6vw;
+    font-weight: bolder;
+    padding-left: 20vh;
+    padding-top: 10vh;
+    
+}
+
+.porto{
+    text-decoration: none;
+    color: white;
+    padding-left: 20vh;
+    padding-top: 5vh;
+    font-size: 1.5vw;
+}
+
+
+
+#skill ul{
+    padding-left: 20vh;
+    padding-top: 5vh;
+}
+
+#skill li{
+    list-style: none;
+    margin-top: 3vh;
+    font-size: 2.5vw;
+    font-weight: bolder;
+}
+.bar{
+    height: 2vh;
+    background-color: gold;
+}
+#java{
+    width: 40vw;
+
+}
+#as{
+    width: 10vw;
+  
+}
+
+#unity{
+    width: 20vw;
+}
+
+#const{
+    width: 5vw;
+}
+
+#ht{
+    width: 40vw;
+}
+#cs{
+    width: 5vw;
+}
+#ph{
+    width: 10vw;
+}
+#javas{
+    width: 20vw;
+}
+
+#photo{
+    width: 60vw;
+}
+
+#corel{
+    width: 10vw;
+}
+
+
+.skillL2{
+    background-image: linear-gradient(to right, rgba(52, 51, 51, 1), rgba(255, 127, 44, 0.6), rgba(57,57,57,0));
+    height: 90vh;
+}
+
+
+#certificate{
+    background-color: whitesmoke;
+    height: 90vh;
+    position: relative;
+    color: #343333;
+    overflow: hidden;
+}
+#conatinerBox{
+    background-color: #353434;
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.zCer{
+    transition: transform 0.2s;
+    flex-grow: 1;
+    min-width: 50%;
+    height: 50%;
+}
+.zCer:hover{
+    transform: scale(2);
+}
+
+
+#verticalText{
+    font-size: 2.8vw;
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    font-weight: bolder;
+    transform:rotate(-90deg);
+
+}
+#horizonText{
+    font-size: 2vw;
+    position: absolute;
+    top: 70.8vh;
+    left: 20vw;
+
+}
+
+#footer{
+    background-color: #314b66;
+    height: 50vh;
+    color: white;
+    position: relative;
+    overflow: hidden;
+} 
+
+#foot-up{
+    position: absolute;
+    top: 13%;
+    width: 100%;
+}
+#footname{
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+}
+
+#foot-quote{
+    margin-top: 2%;
+    font-size: 1vw;
+    color: #a6c7da;
+}
+
+#copyrg{
+    background-color: #343333;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1% 0 1% 0;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+.socialE{
+    display: inline-flex;
+    width: 30%;
+   
+}
+.socialE li{
+    float: left;
+    list-style: none;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+#copyrg p{
+    font-size: 1vw;
+    letter-spacing: 0.8vh;
+}
+
+
+/* --------------------------- */
+
+@media screen and (max-width:700px) {
+    #headStarDown{
+        width: 60%;
+        height: 60%;
+    }
+
+    #headdes{
+        font-size: 1.65vw;
+    }
+
+    #aboutdes {
+        font-size: 2vw;
+        width: 80%;
+        text-align: justify;
+        margin-right: 2%;
+    }
+    #organisasi{
+        display: block;
+        overflow: scroll;
+    }
+    .titleOrg{
+        font-size: 1.7vw;
+       
+    }
+    #conatinerBox{
+        overflow: auto;
+        width: 90%;
+        /* height: 100%; */
+        display: block ruby;
+        left: 5%;
+        top: 10%;
+    }
+    .zCer{
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .zCer:hover{
+        transform: scale(1);
+    }
+    #verticalText{
+        display: none;
+    }
+    #horizonText{
+        display: none;
+    }
+
+    #footer{
+        height: 30vh;
+    }
+
+    .socialE img{
+        width: 4vw;
+        height: 4vw;
+    }
+    #myself2{
+        display: none;
+    }
+}
+
+

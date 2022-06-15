@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Viola Pramesti</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="polyHead"></div>
+            <img src="images/black-glit.png" id="headStarUp">
+         
+            <img src="images/grey-glit.png" id="headStarDown">
+            
+            <p id="hello">Hello, I am</p>
+            <p id="fname">VIOLA</p>
+            <p id="lname">PRAMESTI</p>
+            <p id="headdes">I am a beginner programmer who is learning various things related to technology. 
+                I really like technology especially in mobile development and looking forward to work with your company.</p>
+            <img id="myself" src="images/self.png">
+        </div>
+        
+        <div id="menu">
+            <div id="pojok"></div>
+            <ul class="menuClass">
+                <li class="menuLi"><a href="#aboutme">ABOUT ME</a></li>
+                <li class="menuLi"><a href="#skill">SKILL</a></li>
+                <li class="menuLi"><a href="#certificate">CERTIFICATE</a></li>
+                <li onclick="myContact()" id="contactBtn">CONTACT</li>
+            </ul>
+            <div id="closing" onclick="myContactClose()"></div>
+            
+            <div id="contactForm">
+                <div id="phoneNumber" class="cf">
+                    <img src="images/phone.png" width="30vw" height="30vw">
+                    <p>Whatsapp only 081548220419</p>
+                </div>
+                <div id="emailCo" class="cf">
+                    <img src="images/gmail.png" width="30vw" height="30vw">
+                    <p>violapramesti2003 @gmail.com</p>
+                </div>
+                <div id="address" class="cf">
+                    <img src="images/home.png" width="30vw" height="30vw">
+                    <p>Klaten Kencana, Klaten, Central Java, Indonesia</p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="aboutme" class="thisSec">
+            <div id="abBio">
+                <div id="aboutS1">
+                    <input onclick="toLeft()" type="image" id="toLeft" src="images/arrow1.png"/>
+                    <img id="myself2" src="images/self2.png" >
+                    <p id="longname">VIOLA CLARA CITRA PRAMESTI</p>
+                    <P id="position">BEGINNER PROGRAMMER</P>
+                    <p id="aboutdes">Hello, I am a beginner programmer who is currently studying in the Department of Information and Computer Engineering Education at Sebelas Maret University.
+                        Born in Klaten, Central Java on 7 March 2003, I try to keep learning about technology outside of my college time to develop my hobby.
+                        I really like learning about mobile development and have launched some of my mobile apps on google play store.
+                        My strength is the speed in doing each task given. I really hope to join your company to add to my experience.
+                    </p>
+                </div>
+                <div id="aboutS2">
+                    <input onclick="toRight()" type="image" id="toRight" src="images/arrow2.png"/>
+                    <div id="riwayat">
+                        <p id="edu">EDUCATION<br>ORGANIZATION</p>
+                        <ul class="school">
+                            <li>2009</li>
+                            <li>2010</li>
+                            <li>2015</li>
+                            <li>2018</li>
+                            <li>2021</li>
+                        </ul>
+                        <ul class="nameSch">
+                            <li>SD NEGERI 13 PAGI</li>
+                            <li>SD NEGERI 4 BARENG LOR</li>
+                            <li>SMP NEGERI 1 KLATEN</li>
+                            <li>SMA NEGERI 1 KLATEN</li>
+                            <li>UNIVERSITAS SEBELAS MARET</li>
+                            
+                        </ul>
+                    
+                        <ul class="timecon">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div id="verLine"></div>
+                        
+                            <!-- <div class="strip"></div>
+                            <div class="strip"></div>
+                            <div class="strip"></div>
+                            <div class="strip"></div>
+                            <div class="strip"></div> -->
+                       
+                    </div>
+                    
+                    <div id="organisasi">
+                        <div class="box">
+                            <center><img id="blog" class="imgOrg" src="images/blog-black.png" width="20%"></center>
+                            <div class="textBox">
+                                <p class="titleOrg">BLOGGER INDONESIA</p>
+                                <p class="detOrg">A group on social media that connects bloggers (someone who writes on google's blogger service) with one another</p>
+                            </div>
+                            
+                        </div>
+                        <div class="box">
+                            <center><img id="figma" class="imgOrg" src="images/figma-black.png" width="20%"></center>
+                            <div class="textBox">
+                                <p class="titleOrg">FIGMA & XD DESIGNERS</p>
+                            <p class="detOrg">Places to share design & resources that help designer and creative community. </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <center><img id="seo" class="imgOrg" src="images/seo-black.png" width="20%"></center>
+                            <div class="textBox">
+                                <p class="titleOrg">SEO WORDPRESS INDONESIA</p>
+                                <p class="detOrg">Indonesian community to learn about SEO (Search Engine Optimization)and adsense.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <center><img id="chess" class="imgOrg" src="images/chess-black.png" width="20%"></center>
+                            <div class="textBox">
+                                <p class="titleOrg">CHESS UNS</p>
+                                <p class="detOrg">one of the communities at UNS to develop talent for chess and learn better in chess</p>
+                            </div>    
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            
+            
+        </div>
+        <div id="skill" class="thisSec">
+            <div id="sk">
+                <div id="slides">
+                    <input type="radio" name="slideBTN" id="sl1"> 
+                    <input type="radio" name="slideBTN" id="sl2"> 
+                    <input type="radio" name="slideBTN" id="sl3"> 
+                    <input type="radio" name="slideBTN" id="sl4">
+    
+                    <div id="skillSlide1" class="no1 ss">
+                        <div class="skillL2">
+                            <p class="skilltitle">MOBILE DEVELOPER</p>
+                            <a class="porto"  target="_blank" href="https://play.google.com/store/apps/developer?id=TBash">PORTOFOLIO</a>
+                            <ul>
+                                <li>JAVA <div id="java" class="bar"></div> </li>
+                                <li>ANDROID STUDIO <div id="as" class="bar"></div> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div id="skillSlide2" class="no2 ss">
+                        <div class="skillL2">
+                            <p class="skilltitle">GAME DEVELOPER</p>
+                            <a class="porto"  target="_blank" href="https://github.com/violaClara">PORTOFOLIO</a>
+                            <ul class="lis2">
+                                <li>UNITY <div id="unity" class="bar"></div></li>
+                                <li>CONSTRUCT 2 <div id="const" class="bar"></div></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <div id="skillSlide3" class="no3 ss">
+                        <div class="skillL2">
+                            <p class="skilltitle">FRONT END</p>
+                            <a class="porto"  target="_blank" href="https://violaclara.github.io/Portofolio2-frontdev/">PORTOFOLIO</a>
+                            <ul>
+                                <li>HTML <div id="ht" class="bar"></div></li>
+                                <li>CSS<div id="cs" class="bar"></div></li>
+                                <li>JAVASCRIPT<div id="javas" class="bar"></div></li>
+                                <li>PHP<div id="ph" class="bar"></div></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <div id="skillSlide4" class="no4 ss">
+                        <div class="skillL2">
+                            <p class="skilltitle">GRAPHIC DESIGNER</p>
+                            <a class="porto"  target="_blank" href="https://violaclara.github.io/Portofolio2-frontdev/">PORTOFOLIO</a>
+                            <ul>
+                                <li>PHOTOSHOP<div id="photo" class="bar"></div></li>
+                                <li>CORELDRAW<div id="corel" class="bar"></div></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    
+                    <div class="navAuto">
+                        <div class="auto1"></div>
+                        <div class="auto2"></div>
+                        <div class="auto3"></div>
+                        <div class="auto4"></div>
+                    </div>
+                </div>
+                
+                <div class="navMan">
+
+                    <label for="sl1" class="buttonManu"></label>
+                    <label for="sl2" class="buttonManu"></label>
+                    <label for="sl3" class="buttonManu"></label>
+                    <label for="sl4" class="buttonManu"></label>
+                </div>
+
+            </div>
+        </div>
+        <div id="certificate" class="thisSec">
+            <div id="conatinerBox">
+                <img id="cer1" class="zCer" src="images/ser1.jpg">
+                <img id="cer2" class="zCer" src="images/ser2.jpg">
+                <img id="cer3" class="zCer" src="images/ser3.jpg">
+                <img id="cer4" class="zCer" src="images/ser4.jpg">
+            </div>
+            <p id="verticalText">CERTIFICATE</p>
+            <p id="horizonText">COMPLETION</p>
+        </div>
+        <div id="footer">
+            <center id="foot-up">
+                <p id="footname">VIOLA PRAMESTI</p>
+                <p id="foot-quote">Two roads diverged in a wood, and I, I took the one less travelled by, <br>and that has made all the difference.</p>
+                <ul class="socialE">
+                    <li><a href="https://www.instagram.com/violaclaracitra/" target="_blank"><img src="images/ig.png" width="30vw" height="30vw" ></a></li>
+                    <li><a href="mailto:violapramesti2003@gmail.com"><img src="images/gmai-2l.png" width="30vw" height="30vw"></a></li>
+                    <li><a href="https://www.linkedin.com/in/viola-pramesti-26bba5219/?originalSubdomain=id" target="_blank"><img src="images/linkin.png" width="30vw" height="30vw"></a></li>
+                    <li><a href="https://github.com/violaClara" target="_blank"><img src="images/git.png" width="30vw" height="30vw"></a></li>
+                </ul>
+            </center>
+            
+            <center id="copyrg"><p>Copyright &#169 2022, Design by Viola Pramesti</p></center>
+        </div>
+    </div>
+
+    <script src="autoslide.js"></script>
+    <script src="arrowing.js"></script>
+    <script src="menuActive.js"></script>
+    <script src="mycontacting.js"></script>
+ 
+</body>
+</html>

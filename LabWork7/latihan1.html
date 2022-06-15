@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR</title>
+</head>
+<body style="background-image: url('bg1.jpg'); color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <center>
+        <div id="con" style="background-color: rgba(0, 0, 0, 0.85); width: fit-content; padding: 40px; border-radius: 20px;">
+            <h1>KALKULATOR SEDERHANA</h1>
+
+            <form>
+                <div id="masukan" style="margin: 50px 50px 10px 50px;">
+                    <div class="in" style="margin: 30px;">
+                        <label for="bil1">Bilangan pertama:</label>
+                        <input type="number" id="bil1" name="bil1">
+                    </div>
+                    
+                    <label for="bil12">Bilangan kedua:</label>
+                    <input type="number" id="bil2" name="bil2">
+                </div>
+        
+
+                <div id="operator" style="margin:30px;">
+                    <input type="radio" id="jumlah" name="calc" value="jumlah">
+                    <label for="jumlah">+</label> 
+                    <input type="radio" id="kurang" name="calc" value="kurang">
+                    <label for="kurang">-</label> 
+                    <input type="radio" id="kali" name="calc" value="kali">
+                    <label for="kali">*</label> 
+                    <input type="radio" id="bagi" name="calc" value="bagi">
+                    <label for="bagi">/</label>
+                </div>
+                
+                <button onclick="hitung()">Calculate</button>
+            </form>
+        </center>
+        </div>
+        
+    
+
+
+</body>
+<script>
+    function hitung(){
+        var bil1=Number(document.getElementById("bil1").value); //number taruh sini ajalah
+        var bil2=Number(document.getElementById("bil2").value);
+        if (document.getElementById("jumlah").checked){
+            var hasil=bil1+bil2; 
+            alert("Hasilnya adalah: "+hasil);  
+        }
+        else if (document.getElementById("kurang").checked){
+            var hasil=bil1-bil2; 
+            alert("Hasilnya adalah: "+hasil);  
+        }
+        else if (document.getElementById("kali").checked){
+            var hasil=bil1*bil2; 
+            alert("Hasilnya adalah: "+hasil);  
+        }
+        else if (document.getElementById("bagi").checked){
+            var hasil=bil1/bil2; 
+            alert("Hasilnya adalah: "+hasil);  
+        }
+        // var p=document.createElement("p");
+        // var nd= document.createTextNode("hasil= ");
+        // p.appendChild(nd);
+        
+
+    }
+    
+</script>
+</html>

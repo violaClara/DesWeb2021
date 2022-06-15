@@ -1,0 +1,251 @@
+*{
+    font-family: 'Gothic A1', sans-serif;
+}
+body{
+    background-image: url(images/background.jpg);
+ 
+}
+#wrap{
+ width: 1200px;
+ height: 800px;
+ margin: 0 auto;
+ /* background-color: white; */
+
+ 
+}
+
+#header{
+    background-image: url(images/header.jpg)!important;
+    border-bottom-right-radius: 50px;
+    width: 930px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 25);
+    float: right;
+}
+
+#judul{
+    font-size: 50px;
+    text-align: left;
+    padding: 100px 40px 0 50px;
+}
+
+#judul a{
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+}
+
+#judul a:hover{
+    color: grey;
+}
+
+.desc{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding: 10px 40px 0 20px;
+}
+
+.invitation{
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: -155px 15px 0 0;
+    float: right;
+    font-size: 15px;
+    font-family: 'Yeseva One', cursive;
+    opacity: 0.55;
+}
+
+#menu ul{
+    float: right;
+    background: #214141;
+    padding: 0 0px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 25);
+    list-style: none;
+    width: 930px;
+ 
+}
+
+#menu ul:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#menu ul li{
+    float: left;
+}
+
+#menu ul li:hover{
+    background: #458888;
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#menu ul li:hover a{
+    color: white;
+}
+
+#menu ul li:hover >ul{
+    display: block;
+}
+
+#menu ul ul{
+    background: #214141;
+    position: absolute;
+    padding: 0;
+    top: 100%;
+    display: none;
+    width: auto;
+}
+
+#menu ul ul li{
+    float: none;
+    position: relative;
+}
+
+#menu ul ul li a{
+    padding: 10px 30px;
+    color: white;
+}
+
+#menu ul ul li a:hover{
+    background: #458888;
+    color: white;
+}
+
+#menu ul ul ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+#kiri{
+    border-top-left-radius: 50px;
+    width: 250px;
+    height: auto;
+    margin: 0 0 20px;
+    float: left;
+    list-style: none;
+    position: fixed;
+
+   
+}
+
+#menuLL{
+    background-color: aliceblue;
+    opacity: 0.7;
+    box-shadow:  5px 10px #888888;
+    border-bottom-left-radius: 40px;
+}
+
+#kiri ul{
+    margin: 0 0 20px 20px;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+    
+}
+
+#kiri li{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#kiri h2{
+    margin: 0px 0 0px 0;
+    padding: 5px 12px;
+    color: white;
+    font-size: 20px;
+    background: #214141;
+}
+
+#kiri a{
+    display: block;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: darkslategray;
+    font-family: 'Montserrat';
+    border-bottom: 1px dotted black;
+}
+
+#kiri a:hover{
+    background: #458888;
+    color: white;
+}
+
+#kiri img{
+    position: relative;
+    left:-18px;
+}
+
+#konten{
+    background-color: white;
+    width: 890px;
+    height: auto;
+    margin: 0 0 20px;
+    padding: 20px 20px 20px 20px;
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 25);
+}
+
+.posttitle{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Gothic A1';
+    color:slategray;
+    margin: 20px;
+}
+
+.posttitle a{
+    text-decoration: none;
+}
+
+.post{
+    margin: 0 20px 0 20px;
+    text-align: justify;
+    
+}
+.postIm{
+    text-align: center;
+}
+.post p{
+    font-family: 'Montserrat';
+}
+
+b a{
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.post img{
+    width: 30%;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+}
+
+#footer{
+    background-color: #214141;
+    padding: 10px 0 0 0;
+    width: 1200px;
+    height: 30px;
+    clear: both;
+    margin: 20 0;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 50px;
+}
